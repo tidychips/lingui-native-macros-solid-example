@@ -1,0 +1,34 @@
+{
+  "name": "lingui-native-macros-solid-example",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev:babel": "LINGUI_TRANSFORM=babel vite",
+    "dev:native": "LINGUI_TRANSFORM=native vite",
+    "build:babel": "LINGUI_TRANSFORM=babel vite build",
+    "build:native": "LINGUI_TRANSFORM=native vite build",
+    "preview": "vite preview",
+    "show:native-transform": "node scripts/show-native-transform.mjs",
+    "lingui:extract": "lingui extract --clean",
+    "lingui:compile": "lingui compile --strict"
+  },
+  "dependencies": {
+    "@lingui/core": "6.9.0",
+    "@lingui/solid": "6.9.0",
+    "solid-js": "1.9.15"
+  },
+  "devDependencies": {
+    "@lingui/babel-plugin-lingui-macro": "6.9.0",
+    "@lingui/cli": "6.9.0",
+    "@lingui/conf": "6.9.0",
+    "@lingui/format-po": "6.9.0",
+    "@lingui/native-tools": "0.1.5",
+    "@lingui/vite-plugin": "6.9.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.2",
+    "vite-plugin-solid": "2.11.14"
+  }
+}
